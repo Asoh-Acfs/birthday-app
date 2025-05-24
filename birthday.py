@@ -40,15 +40,13 @@ st.markdown("---")
 st.markdown("### Birthday Quote")
 st.markdown("> *“Every year of your life is a beautiful story written by Allah. Let this chapter be your best one yet.”*")
 
-# Upload and display images
-st.markdown("---")
-st.markdown("### Some of your lovely pictures:")
-uploaded_files = st.file_uploader("Upload some of her pictures", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
+# Load the first image
+image1 = Image.open('umma1.png')
+st.image(image1, caption='Umma Picture 1')
 
-if uploaded_files:
-    for uploaded_file in uploaded_files:
-        img = Image.open(uploaded_file)
-        st.image(img, caption="Beautiful memories!", use_column_width=True)
+# Load the second image
+image2 = Image.open('umma2.png')
+st.image(image2, caption='Umma Picture 2')
 
 # Balloons
 st.balloons()

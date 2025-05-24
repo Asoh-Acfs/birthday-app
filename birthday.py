@@ -42,7 +42,7 @@ st.markdown("> *“Every year of your life is a beautiful story written by Allah
 
 # Load the first image
 image1 = Image.open('umma1.png')
-st.image(image1, caption='I swear you're so beautiful', use_container_width=True)
+st.image(image1, caption='I swear you are so beautiful', use_container_width=True)
 
 # Load the second image
 image2 = Image.open('umma2.png')
